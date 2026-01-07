@@ -126,4 +126,4 @@ Schematic View
 ![HarnessForge Schematic Screenshot](images/screenshot-schematic.png)
 
 Parts View
-![HarnessForge Parts Screenshot](images/screenshot-parts.png)
+![HarnessForge Connections Screenshot](images/screenshot-connections.png)

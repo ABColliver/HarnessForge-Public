@@ -2,7 +2,8 @@
 
 Version: 3.1.x
 
-HarnessForge is a React JSX based Wire Harness Design Tool. It bridges the gap between logical electrical schematics and physical loom layouts. Designed for automotive, motorsport, and DIY electronics projects, it allows users to design circuits, route physical bundles, and automatically calculate wire lengths.
+HarnessForge is a React JSX based Wire Harness Design Tool. It bridges the gap between logical electrical schematics and physical loom layouts. Designed for automotive, motorsport, and DIY electronics projects, it allows users to design wiring circuits, route physical bundles, and automatically calculate wire lengths.
+It uses TailwindCSSv3 and the lucide-react icon set.
 
 ![HarnessForge Screenshot](images/screenshot.png)
 

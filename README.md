@@ -16,7 +16,7 @@ HarnessForge is a React JSX based Wire Harness Design Tool. It bridges the gap b
 * Schematic:
     * Logical connections in the harness (pin to pin).
     * Auto wire routing for schematic diagrams.
-    * Wires calculate the shortest path for with auto collision avoidance. Wires to/from the same pin will stack.
+    * Wires calculate the shortest path with auto collision avoidance. Wires to/from the same pin will stack.
     * Wire lengths are calculated based on the physical loom layout and bundle lengths.
 * Loom:
     * Physical representation of the loom (connector to connector)

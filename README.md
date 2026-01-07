@@ -120,3 +120,10 @@ The tool automatically calculates the wire length required to build the harness.
 * Diode's create unrouted dashed Airwire lines in loom view. - To be fixed in future build, they will use same behavior as resistors.
 * Coords column in Parts list serves no purpose - This was a development tool for troubleshooting, will be removed in future build.
 * Windows Build Specific: Printing Schematic or Loom to PDF occasionally shows some 1 pixel tearing. Seems to be something specific to the Windows Electron build only.
+
+## Screenshots
+Schematic View
+![HarnessForge Schematic Screenshot](images/screenshot-schematic.png)
+
+Parts View
+![HarnessForge Parts Screenshot](images/screenshot-parts.png)

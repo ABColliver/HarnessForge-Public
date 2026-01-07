@@ -96,8 +96,11 @@ The tool automatically calculates the wire length required to build the harness.
 **Note: Changing the scaling does not adjust the physical location of parts so you will need to manually adjust these.**
 
 ## FAQ
+* Q: I have finished my schematic view now there are a bunch of parts connected by dashed lines on my loom page, what do I do now?
+    * A: The dashed wires on the loom page represent the logical connections created by the schematic, in order to physicalise these you need to connect them with bundles. Bundles can either connect two components together or a component to a junction point. Use junctions as an exit point for you to split things out of the loom on a different path. The example files included demonstrate this.
 * Q: I have run a wire with a splice on the schematics page but I am seeing "Not routed in Loom"
-    * A: Splice (diamond) objects need to be snapped into a bundle on the loom before wire lengths can be calculated with splices.
+    * A: The Splice (diamond) objects need to be snapped into a bundle on the loom before wire lengths can be calculated with splices.
+    * A Cont: Resistors and diode's are intentionally not included on the loom page as such wires running to these will always show "Not routed in Loom" and no lengths will be calculated.
 * Q: I want to represent both sides of a connector of an associated harness but now my wire lengths are wrong.
     * A: In the **Schematic View** first make sure there are wires mapped to the appropriate pins (eg Pin 1 Male to Pin 1 Female, Pin 2 Male to Pin 2 Female etc.), once connected drag the connectors until they are physically next to eachother, if connectors are butted up next to eachother this will hide the connections underneath if you prefer.
     * A Cont: In the **Loom View** do not create a bundle joining them as this will effect wire lengths, there will be a dashed line (Air Wire) connecting them logically, just drag them side by side to hide this underneath. Wire pathing will continue on the other side of the connector to it's destination and wire cut lengths will remain correct.

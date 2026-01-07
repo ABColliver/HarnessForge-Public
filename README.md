@@ -77,7 +77,7 @@ This is where you define how the wires are physically routed.
     * Click a source component or junction (Start point).
     * Click a destination component or junction (End point).
     * A "bundle" path is created.
-**Note: Bundles have a source and a destination, when you change the length of a bundle it will push the destination side away from the source side.**
+**Note: Bundles have a source and a destination, when you change the length of a bundle it will push/pull the destination side away from the source side.**
 * Auto-Routing: Wires created in the Schematic view automatically flow through these bundles using the shortest path algorithm.
 * Splices: Drag a Splice node onto a Bundle. It will snap to the bundle, the location of these is critical as it will calculate the wire length either side of the splice.
 **Note: Try and keep Splices one grid point away from (Bézier) curved corners as it can bug the calculated lengths in certain cases.**
@@ -88,7 +88,7 @@ The tool automatically calculates the wire length required to build the harness.
 * Calculation Logic: Sum of Bundle Lengths + Service Loop (eg: 50mm).
 * Visualizing Lengths: Toggle the Ruler Icon in the top bar to see physical lengths of bundles and wires on the canvas.
 * Manual Adjustments: Click a Bundle to manually type in its physical length (mm) in the properties panel. This allows you to match the design to real-world measurements.
-* Scaling: Set the pixels per mm in the Settings menu (default: 1), this allows scaling for physically larger or smaller looms. You may want to increase this value when working on smaller harnesses.
+* Scaling: Set the pixels per mm in the Settings menu (default: 1), this allows scaling for physically larger or smaller looms. You may want to increase this value when working on smaller harnesses or decrease to 0.5 for larger harnesses.
 
 **Note: Changing the scaling does not adjust the physical location of parts so you will need to manually adjust these.**
 

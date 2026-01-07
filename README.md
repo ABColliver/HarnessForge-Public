@@ -9,9 +9,17 @@ It uses TailwindCSSv3 and the lucide-react icon set.
 
 ![HarnessForge Screenshot](images/screenshot.png)
 
-# Example Files
+# Example Project Files
 * [Simple Injector Loom](ExampleFiles/Simple%20Injector%20Loom.json)
 * [Demo Aux Loom](ExampleFiles/Demo%20Aux%20Loom.json)
+# Example Connectors (with diagrams)
+* [BMW 8HP Transmission](Connectors/BMW/8HP Trans Connector_Template.json)
+* [BMW 8HP 10Pin Shifter](Connectors/BMW/A90 8HP Shifter 10Pin_Template.json)
+* [Cantcu](Connectors/Cantcu/CANTCU Connector_Template.json)
+* [Deutsch](Connectors/Cantcu/DT4.json)
+* [Link G4X XtremeX A](Connectors/Link/Link&20G4X&20XtremeX&20A&20Connector-img_Template.json)
+* [Link G4X XtremeX B](Connectors/Link/Link&20G4X&20XtremeX&20A&20Connector-img_Template.json)
+
 # Key Features
 
 * Dual-View Design: seamless toggling between Schematic (logical) and Loom (physical) views and the option to split view (both).

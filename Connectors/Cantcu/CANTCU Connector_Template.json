@@ -1,0 +1,104 @@
+{
+  "name": "CANTCU Connector",
+  "type": "CONNECTOR",
+  "gender": "FEMALE",
+  "notes": "",
+  "pins": [
+    {
+      "number": "1",
+      "name": "A1 +12v"
+    },
+    {
+      "number": "2",
+      "name": "A2 C1H"
+    },
+    {
+      "number": "3",
+      "name": "A3 C1L"
+    },
+    {
+      "number": "4",
+      "name": "A4 C2H"
+    },
+    {
+      "number": "5",
+      "name": "A5 C2L"
+    },
+    {
+      "number": "6",
+      "name": "A6 C3H"
+    },
+    {
+      "number": "7",
+      "name": "A7 C3L"
+    },
+    {
+      "number": "8",
+      "name": "A8 GND"
+    },
+    {
+      "number": "9",
+      "name": "B1 DOUT1"
+    },
+    {
+      "number": "10",
+      "name": "B2 AIN1"
+    },
+    {
+      "number": "11",
+      "name": "B3 AIN2"
+    },
+    {
+      "number": "12",
+      "name": "B4 AIN3"
+    },
+    {
+      "number": "13",
+      "name": "B5 AIN4"
+    },
+    {
+      "number": "14",
+      "name": "B6 DIN3"
+    },
+    {
+      "number": "15",
+      "name": "B7 DIN4"
+    },
+    {
+      "number": "16",
+      "name": "B8 DOUT3"
+    },
+    {
+      "number": "17",
+      "name": "C1 DOUT2"
+    },
+    {
+      "number": "18",
+      "name": "C2 +5v"
+    },
+    {
+      "number": "19",
+      "name": "C3 LIN"
+    },
+    {
+      "number": "20",
+      "name": "C4 WUP"
+    },
+    {
+      "number": "21",
+      "name": "C5 DIN1"
+    },
+    {
+      "number": "22",
+      "name": "C6 DIN2"
+    },
+    {
+      "number": "23",
+      "name": "C7 Sensor GND"
+    },
+    {
+      "number": "24",
+      "name": "C8 DOUT4"
+    }
+  ]
+}

@@ -16,7 +16,7 @@ It uses TailwindCSSv3 and the lucide-react icon set.
 * [BMW 8HP Transmission](Connectors/BMW/8HP%20Trans%20Connector_Template.json)
 * [BMW 8HP 10Pin Shifter](Connectors/BMW/A90%208HP%20Shifter%2010Pin_Template.json)
 * [Cantcu](Connectors/Cantcu/CANTCU%20Connector_Template.json)
-* [Deutsch](Connectors/DT4.json)
+* [Deutsch](Connectors/Deutsch/DT4.json)
 * [Link G4X XtremeX A](Connectors/Link/Link%20G4X%20XtremeX%20A%20Connector-img_Template.json)
 * [Link G4X XtremeX B](Connectors/Link/Link%20G4X%20XtremeX%20A%20Connector-img_Template.json)
 

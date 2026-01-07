@@ -11,26 +11,29 @@ HarnessForge is a React JSX based Wire Harness Design Tool. It bridges the gap b
 * [Demo Aux Loom](ExampleFiles/Demo%20Aux%20Loom.json)
 # Key Features
 
-* Dual-View Design: seamless toggling between Schematic (logical) and Loom (physical) views.
+* Dual-View Design: seamless toggling between Schematic (logical) and Loom (physical) views and the option to split view (both).
 
 * Schematic:
     * Logical connections in the harness (pin to pin).
     * Auto wire routing for schematic diagrams.
     * Wires calculate the shortest path with auto collision avoidance. Wires to/from the same pin will stack.
     * Wire lengths are calculated based on the physical loom layout and bundle lengths.
+    * Wire gauge and colour can be set (AWG).
+    * Connectors can have notes and diagrams added.
 * Loom:
     * Physical representation of the loom (connector to connector)
     * Define bundle lengths and physical routing.
-    * Floating Splices: Splices snap to bundles and auto-calculate wire lengths before and after the splice.
+    * Junctions: Place junctions to split your loom into multiple paths.
+    * Splices: Splices defined in schematic view can be snapped to bundles and auto-calculate wire lengths before and after the splice.
     * Cut List Calculation: Automatically calculates wire lengths including a configurable service loop.
 
-*    Component Management: Support for Connectors (DT/Custom), Splices, Diodes, Resistors, Fuses, and Relays.
-
+* Component Management: Support for Connectors (DT/Custom), Splices, Diodes, Resistors, Fuses, and Relays.
+* Wire Circuit Highlighting: Show all connected pins on the circuit.
 * Data Export/Import:
     * JSON Project saving/loading.
     * CSV Export for Bill of Materials (BOM) and Parts/Wire Cut Lists.
     * Connector Import/Export
-    * Diagram Import (1MB Max Size) for visual representation of connectors.
+    * Connector Diagram Import (1MB Max Size) for visual representation of connectors.
     * Print-ready PDF generation.
 
 

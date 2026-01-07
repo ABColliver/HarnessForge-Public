@@ -1,0 +1,414 @@
+{
+  "name": "Simple Injector Loom",
+  "settings": {
+    "gridSize": 20,
+    "pixelsPerMm": 2,
+    "serviceLoop": 50
+  },
+  "components": [
+    {
+      "id": "77u9dr42w",
+      "type": "CONNECTOR",
+      "name": "DT8 Injector Plug",
+      "x": 580,
+      "y": 400,
+      "loomX": 1020,
+      "loomY": 720,
+      "gender": "MALE",
+      "pins": [
+        {
+          "id": "ivb5i8p5x",
+          "number": "1",
+          "name": "INJ1"
+        },
+        {
+          "id": "t0moza7ex",
+          "number": "2",
+          "name": "INJ2"
+        },
+        {
+          "id": "yfph27c29",
+          "number": "3",
+          "name": "INJ3"
+        },
+        {
+          "id": "3tqrcr0o9",
+          "number": "4",
+          "name": "INJ4"
+        },
+        {
+          "id": "csfekg1yu",
+          "number": "5",
+          "name": "INJ5"
+        },
+        {
+          "id": "g71lapt74",
+          "number": "6",
+          "name": "INJ6"
+        },
+        {
+          "id": "uw7tnmzjc",
+          "number": "7",
+          "name": "12v"
+        },
+        {
+          "id": "miteuc2c9",
+          "number": "8",
+          "name": "none"
+        }
+      ]
+    },
+    {
+      "id": "0zo0set3e",
+      "type": "CONNECTOR",
+      "name": "INJ1",
+      "x": 1460,
+      "y": 240,
+      "loomX": 1242.2925414354468,
+      "loomY": 794.2137568997706,
+      "gender": "MALE",
+      "pins": [
+        {
+          "id": "7x2v6seg9",
+          "number": "1",
+          "name": "Sig"
+        },
+        {
+          "id": "a24pfdw0w",
+          "number": "2",
+          "name": "12v"
+        }
+      ]
+    },
+    {
+      "id": "as0uyh91m",
+      "type": "CONNECTOR",
+      "name": "INJ2",
+      "x": 1460,
+      "y": 380,
+      "loomX": 1284.3192086423273,
+      "loomY": 531.6495299581671,
+      "gender": "MALE",
+      "pins": [
+        {
+          "id": "idpb2vzru",
+          "number": "1",
+          "name": "Sig"
+        },
+        {
+          "id": "blabszn72",
+          "number": "2",
+          "name": "12v"
+        }
+      ]
+    },
+    {
+      "id": "291irwag3",
+      "type": "CONNECTOR",
+      "name": "INJ5",
+      "x": 1460,
+      "y": 800,
+      "loomX": 1707.3264265820121,
+      "loomY": 714.2063664374912,
+      "gender": "MALE",
+      "pins": [
+        {
+          "id": "we3v57dmt",
+          "number": "1",
+          "name": "Sig"
+        },
+        {
+          "id": "9nxo33f9u",
+          "number": "2",
+          "name": "12v"
+        }
+      ]
+    },
+    {
+      "id": "bea0cgwvr",
+      "type": "CONNECTOR",
+      "name": "INJ4",
+      "x": 1460,
+      "y": 660,
+      "loomX": 1491.4115470897248,
+      "loomY": 549.9626053759192,
+      "gender": "MALE",
+      "pins": [
+        {
+          "id": "k2ja08yer",
+          "number": "1",
+          "name": "Sig"
+        },
+        {
+          "id": "gk5p34hul",
+          "number": "2",
+          "name": "12v"
+        }
+      ]
+    },
+    {
+      "id": "fljk9tdmm",
+      "type": "CONNECTOR",
+      "name": "INJ3",
+      "x": 1460,
+      "y": 520,
+      "loomX": 1475.897761775093,
+      "loomY": 773.6415307513942,
+      "gender": "MALE",
+      "pins": [
+        {
+          "id": "j1dhwgrty",
+          "number": "1",
+          "name": "Sig"
+        },
+        {
+          "id": "ana0wm8p3",
+          "number": "2",
+          "name": "12v"
+        }
+      ]
+    },
+    {
+      "id": "1neeo6d2s",
+      "type": "CONNECTOR",
+      "name": "INJ6",
+      "x": 1460,
+      "y": 940,
+      "loomX": 1706.4588506096006,
+      "loomY": 595.9320459604397,
+      "gender": "MALE",
+      "pins": [
+        {
+          "id": "z4wtb3l72",
+          "number": "1",
+          "name": "Sig"
+        },
+        {
+          "id": "rs9gtrz1d",
+          "number": "2",
+          "name": "12v"
+        }
+      ]
+    },
+    {
+      "id": "q0zfk42vr",
+      "type": "SPLICE",
+      "name": "SPLICE2",
+      "x": 1020,
+      "y": 620,
+      "loomX": 1480,
+      "loomY": 680,
+      "pins": [
+        {
+          "id": "y71cj2g79",
+          "number": "1",
+          "name": "A"
+        }
+      ]
+    },
+    {
+      "id": "7hstldcgs",
+      "type": "SPLICE",
+      "name": "SPLICE1",
+      "x": 920,
+      "y": 360,
+      "loomX": 1300,
+      "loomY": 680,
+      "pins": [
+        {
+          "id": "ryrb6fwv1",
+          "number": "1",
+          "name": "A"
+        }
+      ]
+    },
+    {
+      "id": "63y4aj2fs",
+      "type": "SPLICE",
+      "name": "SPLICE3",
+      "x": 1160,
+      "y": 780,
+      "loomX": 1660,
+      "loomY": 680,
+      "pins": [
+        {
+          "id": "6eil1s7yz",
+          "number": "1",
+          "name": "A"
+        }
+      ]
+    }
+  ],
+  "wires": [
+    {
+      "id": "jmj0rsigw",
+      "from": "ivb5i8p5x",
+      "to": "7x2v6seg9",
+      "color": "#eab308",
+      "gauge": "20AWG"
+    },
+    {
+      "id": "9k37o3q7w",
+      "from": "t0moza7ex",
+      "to": "idpb2vzru",
+      "color": "#9ca3af",
+      "gauge": "20AWG"
+    },
+    {
+      "id": "maxunhkwl",
+      "from": "yfph27c29",
+      "to": "j1dhwgrty",
+      "color": "#1e3a8a",
+      "gauge": "20AWG"
+    },
+    {
+      "id": "jshe888fs",
+      "from": "3tqrcr0o9",
+      "to": "k2ja08yer",
+      "color": "#84cc16",
+      "gauge": "20AWG"
+    },
+    {
+      "id": "69g7996pj",
+      "from": "csfekg1yu",
+      "to": "we3v57dmt",
+      "color": "#3b82f6",
+      "gauge": "20AWG"
+    },
+    {
+      "id": "lawvhsmte",
+      "from": "g71lapt74",
+      "to": "z4wtb3l72",
+      "color": "#15803d",
+      "gauge": "20AWG"
+    },
+    {
+      "id": "26tc9xrzd",
+      "from": "uw7tnmzjc",
+      "to": "ryrb6fwv1",
+      "color": "#ef4444",
+      "gauge": "20AWG"
+    },
+    {
+      "id": "7avivvwn6",
+      "from": "ryrb6fwv1",
+      "to": "y71cj2g79",
+      "color": "#ef4444",
+      "gauge": "20AWG"
+    },
+    {
+      "id": "li81asftm",
+      "from": "ryrb6fwv1",
+      "to": "a24pfdw0w",
+      "color": "#ef4444",
+      "gauge": "20AWG"
+    },
+    {
+      "id": "n62z2f7vk",
+      "from": "ryrb6fwv1",
+      "to": "blabszn72",
+      "color": "#ef4444",
+      "gauge": "20AWG"
+    },
+    {
+      "id": "99eteywj7",
+      "from": "y71cj2g79",
+      "to": "ana0wm8p3",
+      "color": "#ef4444",
+      "gauge": "20AWG"
+    },
+    {
+      "id": "2727l8tm5",
+      "from": "y71cj2g79",
+      "to": "gk5p34hul",
+      "color": "#ef4444",
+      "gauge": "20AWG"
+    },
+    {
+      "id": "du5i7ty9s",
+      "from": "y71cj2g79",
+      "to": "6eil1s7yz",
+      "color": "#ef4444",
+      "gauge": "20AWG"
+    },
+    {
+      "id": "j169ogm3v",
+      "from": "6eil1s7yz",
+      "to": "9nxo33f9u",
+      "color": "#ef4444",
+      "gauge": "20AWG"
+    },
+    {
+      "id": "gjmwf8joc",
+      "from": "6eil1s7yz",
+      "to": "rs9gtrz1d",
+      "color": "#ef4444",
+      "gauge": "20AWG"
+    }
+  ],
+  "junctions": [
+    {
+      "id": "klmypkkso",
+      "x": 1320,
+      "y": 680
+    },
+    {
+      "id": "1o5wzbmcx",
+      "x": 1500,
+      "y": 680
+    },
+    {
+      "id": "uua5efjj0",
+      "x": 1680,
+      "y": 680
+    }
+  ],
+  "bundles": [
+    {
+      "id": "jva27n2wv",
+      "from": "77u9dr42w",
+      "to": "klmypkkso"
+    },
+    {
+      "id": "wu6wcatk0",
+      "from": "klmypkkso",
+      "to": "0zo0set3e"
+    },
+    {
+      "id": "p50kdr9g2",
+      "from": "klmypkkso",
+      "to": "as0uyh91m"
+    },
+    {
+      "id": "d9qf5mbqb",
+      "from": "klmypkkso",
+      "to": "1o5wzbmcx"
+    },
+    {
+      "id": "5h30pnzfw",
+      "from": "1o5wzbmcx",
+      "to": "uua5efjj0"
+    },
+    {
+      "id": "pcaofffvd",
+      "from": "1o5wzbmcx",
+      "to": "fljk9tdmm"
+    },
+    {
+      "id": "bnoim567u",
+      "from": "1o5wzbmcx",
+      "to": "bea0cgwvr"
+    },
+    {
+      "id": "422pfj35y",
+      "from": "uua5efjj0",
+      "to": "291irwag3"
+    },
+    {
+      "id": "iiviky4ya",
+      "from": "uua5efjj0",
+      "to": "1neeo6d2s"
+    }
+  ],
+  "version": "3.1.1"
+}

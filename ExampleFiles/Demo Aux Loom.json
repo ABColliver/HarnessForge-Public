@@ -1,0 +1,328 @@
+{
+  "name": "Demo Aux Loom",
+  "settings": {
+    "gridSize": 20,
+    "pixelsPerMm": 1,
+    "serviceLoop": 50
+  },
+  "components": [
+    {
+      "id": "2punel8s2",
+      "type": "CONNECTOR",
+      "name": "DTM6 Aux Loom",
+      "x": 720,
+      "y": 480,
+      "loomX": 840,
+      "loomY": 420,
+      "gender": "MALE",
+      "pins": [
+        {
+          "id": "anl2ubk2y",
+          "number": "1",
+          "name": "5v"
+        },
+        {
+          "id": "h1lwur8x0",
+          "number": "2",
+          "name": "Water Temp"
+        },
+        {
+          "id": "9lmbamdzq",
+          "number": "3",
+          "name": "Oil Pressure"
+        },
+        {
+          "id": "jhca43q0a",
+          "number": "4",
+          "name": "SIG GND"
+        },
+        {
+          "id": "lvw0vw51g",
+          "number": "5",
+          "name": "Fuel Pressure"
+        },
+        {
+          "id": "2bvxczr2h",
+          "number": "6",
+          "name": "Spare"
+        }
+      ]
+    },
+    {
+      "id": "d0nj5lgy9",
+      "type": "CONNECTOR",
+      "name": "Water Temp",
+      "x": 1460,
+      "y": 580,
+      "loomX": 2020,
+      "loomY": 600,
+      "gender": "FEMALE",
+      "pins": [
+        {
+          "id": "y8mpgr41n",
+          "number": "1",
+          "name": "SIG"
+        },
+        {
+          "id": "7tu2byl3f",
+          "number": "2",
+          "name": "GND"
+        }
+      ]
+    },
+    {
+      "id": "mezmrjzyz",
+      "type": "CONNECTOR",
+      "name": "Oil Pressure",
+      "x": 1460,
+      "y": 400,
+      "loomX": 1700,
+      "loomY": 600,
+      "gender": "FEMALE",
+      "pins": [
+        {
+          "id": "vtbk8f2yu",
+          "number": "1",
+          "name": "5v"
+        },
+        {
+          "id": "aa8yuen2b",
+          "number": "2",
+          "name": "SIG"
+        },
+        {
+          "id": "b83k9f57a",
+          "number": "3",
+          "name": "GND"
+        }
+      ]
+    },
+    {
+      "id": "g4oehff71",
+      "type": "SPLICE",
+      "name": "5v",
+      "x": 1060,
+      "y": 400,
+      "loomX": 1360,
+      "loomY": 401.152090438227,
+      "pins": [
+        {
+          "id": "v5b4nx28n",
+          "number": "1",
+          "name": "A"
+        }
+      ]
+    },
+    {
+      "id": "vk05vc9u7",
+      "type": "GROUND",
+      "name": "SIG GND",
+      "x": 520,
+      "y": 640,
+      "loomX": 740,
+      "loomY": 500,
+      "pins": [
+        {
+          "id": "j3jjcq6dj",
+          "number": "1",
+          "name": "A"
+        }
+      ]
+    },
+    {
+      "id": "03zh6o1nd",
+      "type": "SPLICE",
+      "name": "GND",
+      "x": 1060,
+      "y": 700,
+      "loomX": 1340,
+      "loomY": 401.152090438227,
+      "pins": [
+        {
+          "id": "7qryl1ulx",
+          "number": "1",
+          "name": "A"
+        }
+      ]
+    },
+    {
+      "id": "24d9g3bwg",
+      "type": "SUPPLY5V",
+      "name": "SUPPLY5V",
+      "x": 520,
+      "y": 500,
+      "loomX": 720,
+      "loomY": 340,
+      "pins": [
+        {
+          "id": "xe9z51h7e",
+          "number": "1",
+          "name": "A"
+        }
+      ]
+    },
+    {
+      "id": "zqjwiricz",
+      "type": "CONNECTOR",
+      "name": "Fuel Pressure",
+      "x": 1460,
+      "y": 220,
+      "loomX": 1360,
+      "loomY": 600,
+      "gender": "FEMALE",
+      "pins": [
+        {
+          "id": "7edgvd5f3",
+          "number": "1",
+          "name": "5v"
+        },
+        {
+          "id": "tp141wg7c",
+          "number": "2",
+          "name": "SIG"
+        },
+        {
+          "id": "lfnnuptty",
+          "number": "3",
+          "name": "GND"
+        }
+      ]
+    }
+  ],
+  "wires": [
+    {
+      "id": "gr1grbz2a",
+      "from": "h1lwur8x0",
+      "to": "y8mpgr41n",
+      "color": "#ef4444",
+      "gauge": "20AWG"
+    },
+    {
+      "id": "iezvbwbrc",
+      "from": "jhca43q0a",
+      "to": "j3jjcq6dj",
+      "color": "#9ca3af",
+      "gauge": "20AWG"
+    },
+    {
+      "id": "zhf6aailk",
+      "from": "vtbk8f2yu",
+      "to": "v5b4nx28n",
+      "color": "#f97316",
+      "gauge": "20AWG"
+    },
+    {
+      "id": "59lh06dta",
+      "from": "aa8yuen2b",
+      "to": "9lmbamdzq",
+      "color": "#eab308",
+      "gauge": "20AWG"
+    },
+    {
+      "id": "r03bmbfoj",
+      "from": "jhca43q0a",
+      "to": "7qryl1ulx",
+      "color": "#9ca3af",
+      "gauge": "20AWG"
+    },
+    {
+      "id": "n74p9m5ew",
+      "from": "7tu2byl3f",
+      "to": "7qryl1ulx",
+      "color": "#9ca3af",
+      "gauge": "20AWG"
+    },
+    {
+      "id": "zz6q4hn8z",
+      "from": "b83k9f57a",
+      "to": "7qryl1ulx",
+      "color": "#9ca3af",
+      "gauge": "20AWG"
+    },
+    {
+      "id": "6mq8gvs8c",
+      "from": "xe9z51h7e",
+      "to": "anl2ubk2y",
+      "color": "#f97316",
+      "gauge": "20AWG"
+    },
+    {
+      "id": "3bvh2tpu8",
+      "from": "anl2ubk2y",
+      "to": "v5b4nx28n",
+      "color": "#f97316",
+      "gauge": "20AWG"
+    },
+    {
+      "id": "6i1f6j672",
+      "from": "7edgvd5f3",
+      "to": "v5b4nx28n",
+      "color": "#f97316",
+      "gauge": "20AWG"
+    },
+    {
+      "id": "4mvf7e1oj",
+      "from": "tp141wg7c",
+      "to": "lvw0vw51g",
+      "color": "#a855f7",
+      "gauge": "20AWG"
+    },
+    {
+      "id": "viovrmq7g",
+      "from": "lfnnuptty",
+      "to": "7qryl1ulx",
+      "color": "#9ca3af",
+      "gauge": "20AWG"
+    }
+  ],
+  "junctions": [
+    {
+      "id": "957q0njrf",
+      "x": 1387.9554181458084,
+      "y": 401.152090438227
+    },
+    {
+      "id": "enbls2zzj",
+      "x": 1960,
+      "y": 360
+    }
+  ],
+  "bundles": [
+    {
+      "id": "gdps23119",
+      "from": "vk05vc9u7",
+      "to": "2punel8s2"
+    },
+    {
+      "id": "pwu9gx3gu",
+      "from": "2punel8s2",
+      "to": "957q0njrf"
+    },
+    {
+      "id": "up967jswy",
+      "from": "mezmrjzyz",
+      "to": "957q0njrf"
+    },
+    {
+      "id": "wgigdkgz0",
+      "from": "24d9g3bwg",
+      "to": "2punel8s2"
+    },
+    {
+      "id": "5xkwix8co",
+      "from": "957q0njrf",
+      "to": "enbls2zzj"
+    },
+    {
+      "id": "vohblnch1",
+      "from": "enbls2zzj",
+      "to": "d0nj5lgy9"
+    },
+    {
+      "id": "59sbfnydq",
+      "from": "957q0njrf",
+      "to": "zqjwiricz"
+    }
+  ],
+  "version": "3.1.1"
+}

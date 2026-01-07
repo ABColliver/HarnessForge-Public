@@ -125,5 +125,5 @@ The tool automatically calculates the wire length required to build the harness.
 Schematic View
 ![HarnessForge Schematic Screenshot](images/screenshot-schematic.png)
 
-Parts View
+Connections View
 ![HarnessForge Connections Screenshot](images/screenshot-connections.png)

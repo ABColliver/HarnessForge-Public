@@ -13,16 +13,18 @@ HarnessForge is a React JSX based Wire Harness Design Tool. It bridges the gap b
 
 * Dual-View Design: seamless toggling between Schematic (logical) and Loom (physical) views.
 
-* Auto-Routing:
+* Schematic:
+    * Logical connections in the harness (pin to pin).
+    * Auto wire routing for schematic diagrams.
+    * Wires calculate the shortest path for with auto collision avoidance. Wires to/from the same pin will stack.
+    * Wire lengths are calculated based on the physical loom layout and bundle lengths.
+* Loom:
+    * Physical representation of the loom (connector to connector)
+    * Define bundle lengths and physical routing.
+    * Floating Splices: Splices snap to bundles and auto-calculate wire lengths before and after the splice.
+    * Cut List Calculation: Automatically calculates wire lengths including a configurable service loop.
 
-* Schematic: Orthogonal auto-routing for wiring diagrams.
-    * Loom: Uses Dijkstra’s algorithm to calculate the shortest path for wires through physical bundles with auto collision avoidance.
-    * Physical Simulation:
-        * Define bundle lengths and physical routing.
-        * Floating Splices: Splices snap to bundles and auto-calculate their position ratio.
-        * Cut List Calculation: Automatically calculates wire lengths including a configurable service loop.
-
-*    Component Management: Support for Connectors (DT, Custom), Splices, Diodes, Resistors, Fuses, and Relays.
+*    Component Management: Support for Connectors (DT/Custom), Splices, Diodes, Resistors, Fuses, and Relays.
 
 * Data Export/Import:
     * JSON Project saving/loading.
@@ -61,10 +63,10 @@ This is where you define what connects to what.
     * Click the + (Plus) icon on a source pin.
     * Click in a blank area on the destination pin. (anywhere but it's plus icon)
     * A wire line will auto-route between them.
-
 **Note: Wires have a source and a destination, keep this in mind for how you want the parts list to look.**
-
 * Properties: Click any component or wire to open the Properties Panel on the right to change names, gauges, colors, add notes or import a diagram for the connector. This will also show you the calculated wire length.
+* Wire Highlighting: Click a wire and it will highlight showing its path through the schematic. If you use Split view it will also show its path through the harness.
+* Wire Lengths: Requires placing connectors in loom view and placing any splices (orange diamonds) in their physical location on the loom.
 
 ## Working in Loom View
 This is where you define how the wires are physically routed.
@@ -75,13 +77,11 @@ This is where you define how the wires are physically routed.
     * Click a source component or junction (Start point).
     * Click a destination component or junction (End point).
     * A "bundle" path is created.
-
 **Note: Bundles have a source and a destination, when you change the length of a bundle it will push the destination side away from the source side.**
-
 * Auto-Routing: Wires created in the Schematic view automatically flow through these bundles using the shortest path algorithm.
 * Splices: Drag a Splice node onto a Bundle. It will snap to the bundle, the location of these is critical as it will calculate the wire length either side of the splice.
-
 **Note: Try and keep Splices one grid point away from (Bézier) curved corners as it can bug the calculated lengths in certain cases.**
+* Bundle Length: Click a bundle to set its length in the properties field then press enter. Or just enable the Show Length toggle and drag it to the desired length.
 
 ## Wire Lengths & Calculations
 The tool automatically calculates the wire length required to build the harness.

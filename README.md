@@ -114,3 +114,8 @@ The tool automatically calculates the wire length required to build the harness.
 * Q: I want to represent both sides of a connector of an associated harness but now my wire lengths are wrong.
     * A: In the **Schematic View** first make sure there are wires mapped to the appropriate pins (eg Pin 1 Male to Pin 1 Female, Pin 2 Male to Pin 2 Female etc.), once connected drag the connectors until they are physically next to eachother, if connectors are butted up next to eachother this will hide the connections underneath if you prefer.
     * A Cont: In the **Loom View** do not create a bundle joining them as this will effect wire lengths, there will be a dashed line (Air Wire) connecting them logically, just drag them side by side to hide this underneath. Wire pathing will continue on the other side of the connector to it's destination and wire cut lengths will remain correct.
+
+## Known Issues
+* Printing Parts and Connections pages is broken for now - Use Export to CSV instead and open it in Excel/Libreoffice Calc instead and print that. - To be fixed in future build.
+* Diode's create unrouted dashed Airwire lines in loom view. - To be fixed in future build, they will use same behavior as resistors.
+* Coords column in Parts list serves no purpose - This was a development tool for troubleshooting, will be removed in future build.

@@ -92,3 +92,9 @@ The tool automatically calculates the wire length required to build the harness.
 
 **Note: Changing the scaling does not adjust the physical location of parts so you will need to manually adjust these.**
 
+## FAQ
+* Q: I have run a wire with a splice on the schematics page but I am seeing "Not routed in Loom"
+    * A: Splice (diamond) objects need to be snapped into a bundle on the loom before wire lengths can be calculated with splices.
+* Q: I want to represent both sides of a connector of an associated harness but now my wire lengths are wrong.
+    * A: In the **Schematic View** first make sure there are wires mapped to the appropriate pins (eg Pin 1 Male to Pin 1 Female, Pin 2 Male to Pin 2 Female etc.), once connected drag the connectors until they are physically next to eachother, if connectors are butted up next to eachother this will hide the connections underneath if you prefer.
+    * A Cont: In the **Loom View** do not create a bundle joining them as this will effect wire lengths, there will be a dashed line (Air Wire) connecting them logically, just slot them side by side to hide this. Wire pathing will continue on the other side of the connector to it's destination and wire cut lengths will remain connect.

@@ -50,8 +50,7 @@ It uses TailwindCSSv3 and the lucide-react icon set.
 
 # Installation & Setup
 
-This application is a single-file React component.
-Electron release builds are provided for Linux (Deb/Appimage/tar.gz) and Windows (exe) it is also published via Vercel.
+For Local installations Electron release builds are provided for Linux (Deb/Appimage/tar.gz) and Windows (exe) it is also published online via Vercel at [harnessforge.app](https://harnessforge.app).
 
 # User Guide
 ## The Interface:

@@ -51,6 +51,7 @@ It uses TailwindCSSv3 and the lucide-react icon set.
 # Installation & Setup
 
 For Local installations Electron release builds are provided for Linux (Deb/Appimage/tar.gz) and Windows (exe) it is also published online via Vercel at [harnessforge.app](https://harnessforge.app).
+The in app "Help" view on the side bar is usually the most up to date documentation.
 
 # User Guide
 ## The Interface:
@@ -116,8 +117,8 @@ The tool automatically calculates the wire length required to build the harness.
     * A Cont: In the **Loom View** do not create a bundle joining them as this will effect wire lengths, there will be a dashed line (Air Wire) connecting them logically, just drag them side by side to hide this underneath. Wire pathing will continue on the other side of the connector to it's destination and wire cut lengths will remain correct.
 
 ## Known Issues
-* Coords column in Parts list serves no purpose - This was a development tool for troubleshooting, will be hidden in future build.
 * Windows Build Specific: Printing Schematic or Loom to PDF occasionally shows some 1 pixel tearing. Seems to be something specific to the Windows Electron build only.
+* Occasional Z-Height/Layer bugs - will resolve these at some point.
 
 ## Screenshots
 Schematic View

@@ -3,7 +3,7 @@
   "settings": {
     "gridSize": 20,
     "pixelsPerMm": 2,
-    "serviceLoop": 50
+    "serviceLoop": 30
   },
   "components": [
     {
@@ -207,7 +207,7 @@
       "x": 1020,
       "y": 620,
       "loomX": 1480,
-      "loomY": 680,
+      "loomY": 660,
       "pins": [
         {
           "id": "y71cj2g79",
@@ -224,7 +224,7 @@
       "x": 920,
       "y": 360,
       "loomX": 1300,
-      "loomY": 680,
+      "loomY": 660,
       "pins": [
         {
           "id": "ryrb6fwv1",
@@ -240,8 +240,8 @@
       "name": "SPLICE3",
       "x": 1160,
       "y": 780,
-      "loomX": 1720,
-      "loomY": 680,
+      "loomX": 1660,
+      "loomY": 660,
       "pins": [
         {
           "id": "6eil1s7yz",
@@ -422,5 +422,5 @@
       "to": "1neeo6d2s"
     }
   ],
-  "version": "3.1.6"
+  "version": "3.1.7"
 }

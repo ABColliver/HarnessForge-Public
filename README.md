@@ -51,7 +51,7 @@ It uses TailwindCSSv3 and the lucide-react icon set.
 # Installation & Setup
 
 For Local installations Electron release builds are provided for Linux (Deb/Appimage/tar.gz) and Windows (exe) it is also published online via Vercel at [harnessforge.app](https://harnessforge.app).
-The in app "Help" view on the side bar is usually the most up to date documentation.
+The in app "Help" view on the side bar is usually the most up to date and complete documentation.
 
 # User Guide
 ## The Interface:
@@ -126,3 +126,6 @@ Schematic View
 
 Connections View
 ![HarnessForge Connections Screenshot](images/screenshot-connections.png)
+
+Parts View
+![HarnessForge Connections Screenshot](images/screenshot-parts.png)

@@ -1,6 +1,6 @@
 # HarnessForge - Wire Harness Design Tool
 
-Version: 3.1.x 
+Version: 3.2.x 
 
 [harnessforge.app](https://harnessforge.app)
 

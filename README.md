@@ -121,11 +121,11 @@ The tool automatically calculates the wire length required to build the harness.
 * Windows Build Specific: Printing Schematic or Loom to PDF occasionally shows some 1 pixel tearing. Seems to be something specific to the Windows Electron build only.
 
 ## Screenshots
-Schematic View
+Schematic View (Dark Theme)
 ![HarnessForge Schematic Screenshot](images/screenshot-schematic.png)
 
-Connections View
+Connections View (Classic Theme)
 ![HarnessForge Connections Screenshot](images/screenshot-connections.png)
 
-Parts View
+Parts View (Light Theme)
 ![HarnessForge Connections Screenshot](images/screenshot-parts.png)

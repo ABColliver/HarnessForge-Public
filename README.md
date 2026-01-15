@@ -44,14 +44,15 @@ It uses TailwindCSSv3 and the lucide-react icon set.
     * JSON Project saving/loading.
     * CSV Export for Parts List (Bill of Materials) and Connections/Wire Cut Lists.
     * Connector Import/Export
+    * Connector Pin definitions can be imported from CSV. (See help file for formatting)
     * Connector Diagram Import (1MB Max Size) for visual representation of connectors.
-    * Print-ready diagram generation (white background).
+* Print-ready diagram generation (white background/adjusted white wire colours).
 
 
 # Installation & Setup
 
 For Local installations Electron release builds are provided for Linux (Deb/Appimage/tar.gz) and Windows (exe) it is also published online via Vercel at [harnessforge.app](https://harnessforge.app).
-The in app "Help" view on the side bar is usually the most up to date and complete documentation.
+The in app "Help" view on the side bar is typically the most up to date and complete documentation with screenshots.
 
 # User Guide
 ## The Interface:
@@ -62,7 +63,7 @@ The application is divided into six main views, accessible via the left sidebar:
 *    Split: View Schematic and Loom side-by-side.
 *    Parts: A tabular view of all components (Bill of Materials).
 *    Connections: A tabular view of all wires (Cut List).
-*    Settings: A List of settings for the project.
+*    Settings: A List of settings for the project such as: Grid Size, Scale, Service Loop Allowance, Theme (Classic, Light, Dark)
 
 ## Working in Schematic View
 This is where you define what connects to what.
@@ -77,10 +78,10 @@ This is where you define what connects to what.
     * Click the + (Plus) icon on a source pin.
     * Click in a blank area on the destination pin. (anywhere but it's plus icon)
     * A wire line will auto-route between them.
-**Note: Wires have a source and a destination, keep this in mind for how you want the parts list to look.**
-* Properties: Click any component or wire to open the Properties Panel on the right to change names, gauges, colors, add notes or import a diagram for the connector. This will also show you the calculated wire length.
+**Note: Wires have a source and a destination Pin ID, keep this in mind when building your schematic for how you want the connections list to look.**
+* Properties: Click any component or wire to open the Properties Panel on the right to change names, gauges, colors, add notes or import a diagram for the connector. This will also show you the calculated wire length, gauge, and will allow you to set an expected amperage load for the wire to calculate max amperage over distance for the specified wire gauge.
 * Wire Highlighting: Click a wire and it will highlight showing its path through the schematic. If you use Split view it will also show its path through the harness.
-* Wire Lengths: Requires placing connectors in loom view and placing any splices (orange diamonds) in their physical location on the loom.
+* Wire Lengths: Requires placing connectors and any junctions in loom view, creating bundles between them then snapping any splices (orange diamonds) in their physical location on the loom bundle.
 
 ## Working in Loom View
 This is where you define how the wires are physically routed.
@@ -118,7 +119,6 @@ The tool automatically calculates the wire length required to build the harness.
 
 ## Known Issues
 * Windows Build Specific: Printing Schematic or Loom to PDF occasionally shows some 1 pixel tearing. Seems to be something specific to the Windows Electron build only.
-* Occasional Z-Height/Layer bugs - will resolve these at some point.
 
 ## Screenshots
 Schematic View

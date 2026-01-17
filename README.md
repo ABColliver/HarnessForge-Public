@@ -9,7 +9,10 @@ It uses TailwindCSSv3 and the lucide-react icon set.
 
 ![HarnessForge Screenshot](images/screenshot.png)
 
-# Example Project Files
+# Example Project File Share Links
+* [Simple Injector Loom](https://harnessforge.app/?share_id=f76134237b01)
+* [Demo Aux Loom](https://harnessforge.app/?share_id=bc37041db526)
+# Example Project Files Github Links
 * [Simple Injector Loom](ExampleFiles/Simple%20Injector%20Loom.json)
 * [Demo Aux Loom](ExampleFiles/Demo%20Aux%20Loom.json)
 # Example Connectors (with diagrams)
@@ -47,6 +50,7 @@ It uses TailwindCSSv3 and the lucide-react icon set.
     * Connector Pin definitions can be imported from CSV. (See help file for formatting)
     * Connector Diagram Import (1MB Max Size) for visual representation of connectors.
 * Print-ready diagram generation (white background/adjusted white wire colours).
+* Diagram Sharing (Online harnessforge.app version only) - create share links to send your diagrams to others.
 
 
 # Installation & Setup

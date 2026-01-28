@@ -36,11 +36,13 @@ It uses TailwindCSSv3 and the lucide-react icon set.
     * Connectors can have notes and diagrams added.
 * Loom:
     * Virtual representation of the physical loom (connector to connector)
+    * Wires take shortest/best path through loom between connectors.
     * Define bundle lengths and physical routing.
     * Junctions: Place junctions to split your loom into multiple paths.
     * Splices: Splices defined in schematic view can be snapped to bundles and auto-calculate wire lengths before and after the splice.
     * Cut List Calculation: Automatically calculates wire lengths including a configurable service loop.
 
+* Sticky Notes: Add notes with additional context/info to your diagram.
 * Component Management: Support for Connectors (DT/Custom), Splices, Diodes, Resistors, Fuses, and Relays.
 * Wire Circuit Highlighting: Show all connected pins on the circuit via a Breadth-First Search (BFS).
 * Data Export/Import:
@@ -54,9 +56,40 @@ It uses TailwindCSSv3 and the lucide-react icon set.
 
 
 # Installation & Setup
-
 For Local installations Electron release builds are provided for Linux (Deb/Appimage/tar.gz) and Windows (exe) it is also published online via Vercel at [harnessforge.app](https://harnessforge.app).
-The in app "Help" view on the side bar is typically the most up to date and complete documentation with screenshots.
+
+Linux (deb)
+Download latest version from releases. 
+In Terminal:
+```
+sudo dpkg -i harness-forge_3.x.x_amd64.deb
+```
+
+Linux (AppImage)
+Download Latest Version from releases.
+In Terminal set executable permission (+x):
+```
+chmod +x HarnessForge-3.x.x.AppImage
+```
+Then run the AppImage.
+
+Linux (tar.gz)
+Download latest version from releases. 
+In Terminal:
+```
+tar -xvf harness-forge-3.x.x.tar.gz
+cd harness-forge-3.x.x
+./harness-forge
+```
+Alternatively browse to the folder in your filemanager of choice and double click harness-forge.
+
+Note: Some distro's throw errors about sandbox helper binary - this is distro and Electron/chrome-sandbox specific and not this app so you're on your own there. Standard cause is AppArmor in Ubuntu which in certain configurations requires an AppArmor profile to be added. Executing it from the filemanager generally works also.
+
+Windows (exe)
+Download latest version from releases, Double Click Installer exe to install.
+
+# Documentation
+The in app "Help" view on the side bar is typically the most up to date and complete documentation with screenshots and examples.
 
 # User Guide
 ## The Interface:
@@ -99,7 +132,6 @@ This is where you define how the wires are physically routed.
 **Note: Bundles have a source and a destination, when you change the length of a bundle it will push/pull the destination side away from the source side.**
 * Auto-Routing: Wires created in the Schematic view automatically flow through these bundles using the shortest path algorithm.
 * Splices: Drag a Splice node onto a Bundle. It will snap to the bundle, the location of these is critical as it will calculate the wire length either side of the splice.
-**Note: Try and keep Splices one grid point away from (Bézier) curved corners as it can bug the calculated lengths in certain cases.**
 * Bundle Length: Click a bundle to set its length in the properties field then press enter. Or just enable the Show Length toggle and drag it to the desired length.
 
 ## Wire Lengths & Calculations
@@ -113,13 +145,16 @@ The tool automatically calculates the wire length required to build the harness.
 
 ## FAQ
 * Q: I have finished my schematic view now there are a bunch of parts connected by dashed lines on my loom page, what do I do now?
-    * A: The dashed wires on the loom page represent the logical connections created by the schematic, in order to physicalise these you need to connect them with bundles. Bundles can either connect two components together or a component to a junction point. Use junctions as an exit point for you to split things out of the loom on a different path. The example files included demonstrate this.
+    * A: The dashed wires on the loom page represent the logical connections created by the schematic, in order to physicalise these you need to connect them with bundles. Bundles can either connect two components together or a component to a junction point. Use junctions as an exit point for you to split things out of the loom on a different path. The example files listed above demonstrate this.
 * Q: I have run a wire with a splice on the schematics page but I am seeing "Not routed in Loom"
     * A: The Splice (diamond) objects need to be snapped into a bundle on the loom before wire lengths can be calculated with splices.
-    * A Cont: Resistors and diode's are intentionally not included on the loom page as such wires running to these will always show "Not routed in Loom" and no lengths will be calculated.
+    * A Cont: Resistors and diode's are intentionally excluded on the loom page and as such any wires running to these will always show "Not routed in Loom" and no lengths will be calculated.
 * Q: I want to represent both sides of a connector of an associated harness but now my wire lengths are wrong.
     * A: In the **Schematic View** first make sure there are wires mapped to the appropriate pins (eg Pin 1 Male to Pin 1 Female, Pin 2 Male to Pin 2 Female etc.), once connected drag the connectors until they are physically next to eachother, if connectors are butted up next to eachother this will hide the connections underneath if you prefer.
-    * A Cont: In the **Loom View** do not create a bundle joining them as this will effect wire lengths, there will be a dashed line (Air Wire) connecting them logically, just drag them side by side to hide this underneath. Wire pathing will continue on the other side of the connector to it's destination and wire cut lengths will remain correct.
+    * A Cont: In the **Loom View** do not create a bundle joining them as this will effect wire lengths, there will be a dashed line (Air Wire) connecting them logically, just drag them side by side to hide this underneath if you prefer. Wire pathing will continue on the other side of the connector to it's destination and wire cut lengths will remain correct.
+
+## Release Notes
+* See releases for notes per version.
 
 ## Known Issues
 * Windows Build Specific: Printing Schematic or Loom to PDF occasionally shows some 1 pixel tearing. Seems to be something specific to the Windows Electron build only.

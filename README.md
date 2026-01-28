@@ -43,6 +43,7 @@ It uses TailwindCSSv3 and the lucide-react icon set.
     * Cut List Calculation: Automatically calculates wire lengths including a configurable service loop.
 
 * Sticky Notes: Add notes with additional context/info to your diagram.
+* Autosave: Click the Restore button in the top toolbar to restore the last known state from autosave - uses browser local storage.
 * Component Management: Support for Connectors (DT/Custom), Splices, Diodes, Resistors, Fuses, and Relays.
 * Wire Circuit Highlighting: Show all connected pins on the circuit via a Breadth-First Search (BFS).
 * Data Export/Import:

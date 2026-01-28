@@ -65,6 +65,7 @@ I would always recommend keeping a copy of the latest offline version though so 
 
 Linux (deb)
 Download latest version from releases. 
+
 In Terminal:
 ```
 sudo dpkg -i harness-forge_3.x.x_amd64.deb
@@ -72,6 +73,7 @@ sudo dpkg -i harness-forge_3.x.x_amd64.deb
 
 Linux (AppImage)
 Download Latest Version from releases.
+
 In Terminal set executable permission (+x):
 ```
 chmod +x HarnessForge-3.x.x.AppImage
@@ -80,6 +82,7 @@ Then run the AppImage.
 
 Linux (tar.gz)
 Download latest version from releases. 
+
 In Terminal:
 ```
 tar -xvf harness-forge-3.x.x.tar.gz

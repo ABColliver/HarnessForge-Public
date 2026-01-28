@@ -56,7 +56,11 @@ It uses TailwindCSSv3 and the lucide-react icon set.
 
 
 # Installation & Setup
-For Local installations Electron release builds are provided for Linux (Deb/Appimage/tar.gz) and Windows (exe) it is also published online via Vercel at [harnessforge.app](https://harnessforge.app).
+For Local offline installations Electron based release builds are provided for both Linux (Deb/Appimage/tar.gz) and Windows (exe). 
+The local offline version will attempt to query api.harnessforge.app on launch to check for updates/release notes and will let you know if it finds a newer release version.
+
+An Online version of the app can be found at [harnessforge.app](https://harnessforge.app). 
+I would always recommend keeping a copy of the latest offline version though so you can open your file at any point in the future should the online version ever be offline. That said are functionally the same however generating/opening sharing links is only available in the online version. If you primarily use the offline version and want to share a diagram with someone just load your project file on the online one and click Share.
 
 Linux (deb)
 Download latest version from releases. 

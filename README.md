@@ -185,10 +185,13 @@ Parts View (Light Theme)
 ![HarnessForge Parts Screenshot](images/screenshot-parts.png)
 
 Search Functionality
+
 ![HarnessForge Search Screenshot](images/search.png)
 
 Multi Select Functionality
+
 ![HarnessForge MultiSelect Screenshot](images/multiselect.gif)
 
 Multi Select Functionality
+
 ![HarnessForge Wire Join Screenshot](images/rightclickdrag.gif)

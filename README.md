@@ -10,7 +10,7 @@ It uses TailwindCSSv3 and the lucide-react icon set.
 ![HarnessForge Screenshot](images/screenshot.png)
 
 # Example Project File Share Links
-* [Simple Injector Loom](https://harnessforge.app/?share_id=f76134237b01)
+* [Simple Injector Loom](https://harnessforge.app/?share_id=592c49a2f4f0)
 * [Demo Aux Loom](https://harnessforge.app/?share_id=bc37041db526)
 # Example Project Files Github Links
 * [Simple Injector Loom](ExampleFiles/Simple%20Injector%20Loom.json)
@@ -34,6 +34,9 @@ It uses TailwindCSSv3 and the lucide-react icon set.
     * Wire lengths are calculated based on the physical loom layout and bundle lengths.
     * Wire gauge and colour can be set (AWG).
     * Connectors can have notes and diagrams added.
+    * Find/Search Function (Ctrl+F) to search your schematic for connectors/pin descriptions
+    * Multi Select/Move connectors (Shift+Click or Shift+Drag Selection)
+    * Copy/Paste (Ctrl+C / Ctrl+V) functionality.
 * Loom:
     * Virtual representation of the physical loom (connector to connector)
     * Wires take shortest/best path through loom between connectors.
@@ -43,7 +46,7 @@ It uses TailwindCSSv3 and the lucide-react icon set.
     * Cut List Calculation: Automatically calculates wire lengths including a configurable service loop.
 
 * Sticky Notes: Add notes with additional context/info to your diagram.
-* Autosave: Click the Restore button in the top toolbar to restore the last known state from autosave - uses browser local storage.
+* Autosave: Click the Restore button in the top toolbar to restore the last known state from autosave - uses browser local storage which limits filesize for this feature.
 * Component Management: Support for Connectors (DT/Custom), Splices, Diodes, Resistors, Fuses, and Relays.
 * Wire Circuit Highlighting: Show all connected pins on the circuit via a Breadth-First Search (BFS).
 * Data Export/Import:
@@ -51,18 +54,20 @@ It uses TailwindCSSv3 and the lucide-react icon set.
     * CSV Export for Parts List (Bill of Materials) and Connections/Wire Cut Lists.
     * Connector Import/Export
     * Connector Pin definitions can be imported from CSV. (See help file for formatting)
-    * Connector Diagram Import (1MB Max Size) for visual representation of connectors.
+    * Connector Diagram Import (1MB Max Size) for visual representation of connectors. Ideally you should try and keep images as small as possible filesize wise as they are stored as Base64 in JSON.
 * Print-ready diagram generation (white background/adjusted white wire colours).
 * Diagram Sharing (Online harnessforge.app version only) - create share links to send your diagrams to others.
+* Inbuilt Help File/Documentation Updated per version as new features are added.
 
 
 # Installation & Setup
 For Local offline installations Electron based release builds are provided for both Linux (Deb/Appimage/tar.gz) and Windows (exe). 
-The local offline version will attempt to query api.harnessforge.app on launch to check for updates/patch notes and will let you know if it finds a newer release version.
+The Local offline version will attempt to query api.harnessforge.app on launch to check for updates/patch notes and will let you know if it finds a newer release version.
+Note: You can download updates from within the Electron app's browser and it will save a file to the destination you choose but there is currently no file download dialogue implemented or indication it is downloading in the background.
 
 An Online version of the app can be found at [harnessforge.app](https://harnessforge.app).
 
-I would always recommend keeping a copy of the latest offline version though so you can open your file at any point in the future should the online version ever be offline. That said they are functionally the same however generating/opening sharing links is only available in the online version. If you primarily use the offline version and want to share a diagram with someone just load your project file on the online one and click Share.
+I would always recommend keeping a copy of the latest offline version though so you can open your file at any point in the future should the online version ever be offline. That said they are functionally the same however generating/opening sharing links is only available in the online version. If you primarily use the offline version and want to share a diagram with someone just load your project file on the online app and click Share.
 
 Linux (deb)
 Download latest version from releases. 
@@ -124,6 +129,7 @@ This is where you define what connects to what.
     * Click the + (Plus) icon on a source pin.
     * Click in a blank area on the destination pin. (anywhere but it's plus icon)
     * A wire line will auto-route between them.
+    * If you need to move the canvas while creating a wire in a large drawing you can drag the canvas with the right mouse button.
 **Note: Wires have a source and a destination Pin ID, keep this in mind when building your schematic for how you want the connections list to look.**
 * Properties: Click any component or wire to open the Properties Panel on the right to change names, gauges, colors, add notes or import a diagram for the connector. This will also show you the calculated wire length, gauge, and will allow you to set an expected amperage load for the wire to calculate max amperage over distance for the specified wire gauge.
 * Wire Highlighting: Click a wire and it will highlight showing its path through the schematic. If you use Split view it will also show its path through the harness.
@@ -134,7 +140,7 @@ This is where you define how the wires are physically routed.
 * Positioning: Components added in Schematic view appear here. Drag them to represent their physical location.
 * Junctions: Click "Create Junction" to add anchor points (grey dots) for creating junction points in the loom.
 * Bundling (Creating the Harness):
-    * Click "Create New Bundle" (Link icon).
+    * Click "Create New Bundle" (or press J).
     * Click a source component or junction (Start point).
     * Click a destination component or junction (End point).
     * A "bundle" path is created.
@@ -163,7 +169,7 @@ The tool automatically calculates the wire length required to build the harness.
     * A Cont: In the **Loom View** do not create a bundle joining them as this will effect wire lengths, there will be a dashed line (Air Wire) connecting them logically, just drag them side by side to hide this underneath if you prefer. Wire pathing will continue on the other side of the connector to it's destination and wire cut lengths will remain correct.
 
 ## Release Notes
-* See releases for notes per version.
+* See releases for release notes per version.
 
 ## Known Issues
 * Windows Build Specific: Printing Schematic or Loom to PDF occasionally shows some 1 pixel tearing. Seems to be something specific to the Windows Electron build only.
@@ -176,4 +182,13 @@ Connections View (Classic Theme)
 ![HarnessForge Connections Screenshot](images/screenshot-connections.png)
 
 Parts View (Light Theme)
-![HarnessForge Connections Screenshot](images/screenshot-parts.png)
+![HarnessForge Parts Screenshot](images/screenshot-parts.png)
+
+Search Functionality
+![HarnessForge Search Screenshot](images/search.png)
+
+Multi Select Functionality
+![HarnessForge MultiSelect Screenshot](images/multiselect.gif)
+
+Multi Select Functionality
+![HarnessForge Wire Join Screenshot](images/rightclickdrag.gif)

@@ -192,6 +192,6 @@ Multi Select Functionality
 
 ![HarnessForge MultiSelect Screenshot](images/multiselect.gif)
 
-Multi Select Functionality
+Wire Join Functionality
 
 ![HarnessForge Wire Join Screenshot](images/rightclickdrag.gif)

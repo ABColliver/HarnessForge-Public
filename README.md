@@ -39,8 +39,9 @@ It uses TailwindCSSv3 and the lucide-react icon set.
     * Copy/Paste (Ctrl+C / Ctrl+V) functionality.
 * Loom:
     * Virtual representation of the physical loom (connector to connector)
-    * Wires take shortest/best path through loom between connectors.
-    * Define bundle lengths and physical routing.
+    * Unplaced objects container - keeps unplaced loom objects organised until you are ready to build the virtual loom.
+    * Wires automatically take the shortest/best path through loom bundles between connectors.
+    * Define bundle lengths and physical routing. Bundles can have their length locked.
     * Junctions: Place junctions to split your loom into multiple paths.
     * Splices: Splices defined in schematic view can be snapped to bundles and auto-calculate wire lengths before and after the splice.
     * Cut List Calculation: Automatically calculates wire lengths including a configurable service loop.
@@ -137,7 +138,7 @@ This is where you define what connects to what.
 
 ## Working in Loom View
 This is where you define how the wires are physically routed.
-* Positioning: Components added in Schematic view appear here. Drag them to represent their physical location.
+* Positioning: Components added in Schematic view will be waiting in the unplaced objects area. Drag them to represent their physical location.
 * Junctions: Click "Create Junction" to add anchor points (grey dots) for creating junction points in the loom.
 * Bundling (Creating the Harness):
     * Click "Create New Bundle" (or press J).
@@ -169,7 +170,7 @@ The tool automatically calculates the wire length required to build the harness.
     * A Cont: In the **Loom View** do not create a bundle joining them as this will effect wire lengths, there will be a dashed line (Air Wire) connecting them logically, just drag them side by side to hide this underneath if you prefer. Wire pathing will continue on the other side of the connector to it's destination and wire cut lengths will remain correct.
 
 ## Release Notes
-* See releases for release notes per version.
+* See releases section for release notes per version.
 
 ## Known Issues
 * Windows Build Specific: Printing Schematic or Loom to PDF occasionally shows some 1 pixel tearing. Seems to be something specific to the Windows Electron build only.
@@ -195,3 +196,6 @@ Multi Select Functionality
 Wire Connections
 
 ![HarnessForge Wire Join Screenshot](images/rightclickdrag.gif)
+
+## Architectural Diagram
+![HarnessForge Architecture Diagram](images/harnessforge-architecture.png)

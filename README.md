@@ -12,9 +12,7 @@ It uses TailwindCSSv3 and the lucide-react icon set.
 # Example Project File Share Links
 * [Simple Injector Loom](https://harnessforge.app/?share_id=592c49a2f4f0)
 * [Demo Aux Loom](https://harnessforge.app/?share_id=bc37041db526)
-# Example Project Files Github Links
-* [Simple Injector Loom](ExampleFiles/Simple%20Injector%20Loom.json)
-* [Demo Aux Loom](ExampleFiles/Demo%20Aux%20Loom.json)
+
 # Example Connectors (with diagrams)
 * [BMW 8HP Transmission](Connectors/BMW/8HP%20Trans%20Connector_Template.json)
 * [BMW 8HP 10Pin Shifter](Connectors/BMW/A90%208HP%20Shifter%2010Pin_Template.json)

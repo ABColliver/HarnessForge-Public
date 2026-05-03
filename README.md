@@ -106,6 +106,7 @@ Download latest version from releases, Double Click Installer exe to install.
 
 # Documentation
 The in app "Help" view on the side bar is typically the most up to date and complete documentation with screenshots and examples for each view.
+
 ![HarnessForge Help](images/help.png)
 
 # User Guide

@@ -10,7 +10,7 @@ HarnessForge uses TailwindCSSv3 and the lucide-react icon set and can be used ei
 ![HarnessForge Screenshot](images/screenshot.png)
 
 # Example Project File Share Links
-* [ECU to Injector Example Loom](https://harnessforge.app/?share_id=2ef9ce4755b3) Shown in screenshot above.
+* [ECU to Injector Example Loom](https://harnessforge.app/?share_id=2ef9ce4755b3) (Shown in screenshot above).
 * [Demo Aux Loom (old)](https://harnessforge.app/?share_id=bc37041db526)
 
 # Example Connectors (with diagrams)

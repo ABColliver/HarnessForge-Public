@@ -4,14 +4,14 @@ Version: 3.2.x
 
 [harnessforge.app](https://harnessforge.app)
 
-HarnessForge is a React JSX based Wire Harness Design Tool. It aims to simplify and speed up creation of logical schematic diagrams and physical loom layouts. It was designed with automotive, motorsport and DIY wiring projects in mind and allows users to design and map wiring quickly between connectors and typical automotive components, create virtual loom bundles to represent the physical harness and can automatically calculate wire lengths and provide a cut list.
-It uses TailwindCSSv3 and the lucide-react icon set.
+HarnessForge is a React JS Wire Harness Design CAD Tool. It aims to simplify and speed up creation of logical schematic diagrams and physical loom layouts. It was designed with automotive, motorsport and DIY wiring projects in mind and allows users to design and map wiring quickly between connectors and typical automotive components, create virtual loom bundles to represent the physical harness and can automatically calculate wire lengths and provide a cut list.
+HarnessForge uses TailwindCSSv3 and the lucide-react icon set and can be used either via the online version or the published Electron builds in [releases](https://github.com/ABColliver/HarnessForge-Public/releases).
 
 ![HarnessForge Screenshot](images/screenshot.png)
 
 # Example Project File Share Links
-* [Simple Injector Loom](https://harnessforge.app/?share_id=592c49a2f4f0)
-* [Demo Aux Loom](https://harnessforge.app/?share_id=bc37041db526)
+* [ECU to Injector Example Loom](https://harnessforge.app/?share_id=2ef9ce4755b3) Shown in screenshot above.
+* [Demo Aux Loom (old)](https://harnessforge.app/?share_id=bc37041db526)
 
 # Example Connectors (with diagrams)
 * [BMW 8HP Transmission](Connectors/BMW/8HP%20Trans%20Connector_Template.json)
@@ -21,9 +21,9 @@ It uses TailwindCSSv3 and the lucide-react icon set.
 * [Link G4X XtremeX A](Connectors/Link/Link%20G4X%20XtremeX%20A%20Connector-img_Template.json)
 * [Link G4X XtremeX B](Connectors/Link/Link%20G4X%20XtremeX%20A%20Connector-img_Template.json)
 
-# Key Features
+# Features
 
-* Dual-View Design: seamless toggling between Schematic (logical) and Loom (physical) views and the option to Split View (both).
+* Dual-View Design: toggle between Schematic (logical) and Loom (physical) views and the option to Split View.
 
 * Schematic:
     * Logical connections between components (pin to pin).
@@ -35,6 +35,7 @@ It uses TailwindCSSv3 and the lucide-react icon set.
     * Find/Search Function (Ctrl+F) to search your schematic for connectors/pin descriptions
     * Multi Select/Move connectors (Shift+Click or Shift+Drag Selection)
     * Copy/Paste (Ctrl+C / Ctrl+V) functionality.
+    * Connector Mating - connect multiple sub harnesses together.
 * Loom:
     * Virtual representation of the physical loom (connector to connector)
     * Unplaced objects container - keeps unplaced loom objects organised until you are ready to build the virtual loom.
@@ -44,7 +45,7 @@ It uses TailwindCSSv3 and the lucide-react icon set.
     * Splices: Splices defined in schematic view can be snapped to bundles and auto-calculate wire lengths before and after the splice.
     * Cut List Calculation: Automatically calculates wire lengths including a configurable service loop.
 
-* Sticky Notes: Add notes with additional context/info to your diagram.
+* Sticky Notes: Add notes with additional context/info to areas of your diagram.
 * Autosave: Click the Restore button in the top toolbar to restore the last known state from autosave - uses browser local storage which limits filesize for this feature.
 * Component Management: Support for Connectors (DT/Custom), Splices, Diodes, Resistors, Fuses, and Relays.
 * Wire Circuit Highlighting: Show all connected pins on the circuit via a Breadth-First Search (BFS).
@@ -57,6 +58,8 @@ It uses TailwindCSSv3 and the lucide-react icon set.
 * Print-ready diagram generation (white background/adjusted white wire colours).
 * Diagram Sharing (Online harnessforge.app version only) - create share links to send your diagrams to others.
 * Inbuilt Help File/Documentation Updated per version as new features are added.
+* Dark Mode/Light Mode/Classic Themes
+* Update/Version Alerts and Release Notes (About View)
 
 
 # Installation & Setup
@@ -66,7 +69,7 @@ Note: You can download updates from within the Electron app's browser and it wil
 
 An Online version of the app can be found at [harnessforge.app](https://harnessforge.app).
 
-I would always recommend keeping a copy of the latest offline version though so you can open your file at any point in the future should the online version ever be offline. That said they are functionally the same however generating/opening sharing links is only available in the online version. If you primarily use the offline version and want to share a diagram with someone just load your project file on the online app and click Share.
+I would always recommend keeping a copy of the latest offline version though so you can open your file at any point in the future should the online version ever be offline. They are identical however generating/opening sharing links is only available for the online version. If you primarily use the offline version and want to share a diagram with someone just load your project file on the online app and click Share.
 
 Linux (deb)
 Download latest version from releases. 
@@ -102,7 +105,8 @@ Windows (exe)
 Download latest version from releases, Double Click Installer exe to install.
 
 # Documentation
-The in app "Help" view on the side bar is typically the most up to date and complete documentation with screenshots and examples.
+The in app "Help" view on the side bar is typically the most up to date and complete documentation with screenshots and examples for each view.
+![HarnessForge Help](images/help.png)
 
 # User Guide
 ## The Interface:
@@ -163,9 +167,6 @@ The tool automatically calculates the wire length required to build the harness.
 * Q: I have run a wire with a splice on the schematics page but I am seeing "Not routed in Loom"
     * A: The Splice (diamond) objects need to be snapped into a bundle on the loom before wire lengths can be calculated with splices.
     * A Cont: Resistors and diode's are intentionally excluded on the loom page and as such any wires running to these will always show "Not routed in Loom" and no lengths will be calculated.
-* Q: I want to represent both sides of a connector of an associated harness but now my wire lengths are wrong.
-    * A: In the **Schematic View** first make sure there are wires mapped to the appropriate pins (eg Pin 1 Male to Pin 1 Female, Pin 2 Male to Pin 2 Female etc.), once connected drag the connectors until they are physically next to eachother, if connectors are butted up next to eachother this will hide the connections underneath if you prefer.
-    * A Cont: In the **Loom View** do not create a bundle joining them as this will effect wire lengths, there will be a dashed line (Air Wire) connecting them logically, just drag them side by side to hide this underneath if you prefer. Wire pathing will continue on the other side of the connector to it's destination and wire cut lengths will remain correct.
 
 ## Release Notes
 * See releases section for release notes per version.
